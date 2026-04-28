@@ -26,7 +26,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:abhijithvaofficial@gmail.com" className="text-background/80 hover:text-background transition-colors font-medium">
+                <a href="mailto:mail@abhijithva.in" className="text-background/80 hover:text-background transition-colors font-medium">
                   Get in Touch
                 </a>
               </li>
@@ -37,12 +37,12 @@ export function Footer() {
             <h3 className="font-bold text-background mb-6 text-lg">Connect</h3>
             <ul className="space-y-4 text-base">
               <li>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-background transition-colors font-medium">
+                <a href="https://github.com/cosmic007" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-background transition-colors font-medium">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-background transition-colors font-medium">
+                <a href="https://www.linkedin.com/in/abhijithofficial" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-background transition-colors font-medium">
                   LinkedIn
                 </a>
               </li>

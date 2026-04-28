@@ -63,7 +63,7 @@ export default function Home() {
             I&apos;m always interested in hearing about new projects, challenges, and opportunities to build something meaningful.
           </p>
           <a
-            href="mailto:abhijithvaofficial@gmail.com"
+            href="mailto:mail@abhijithva.in"
             className="inline-flex items-center px-10 py-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-semibold text-lg"
           >
             Get in Touch

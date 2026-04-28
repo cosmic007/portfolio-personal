@@ -37,7 +37,7 @@ export function Navbar() {
               Blog
             </Link>
             <a 
-              href="mailto:abhijithvaofficial@gmail.com" 
+              href="mailto:mail@abhijithva.in" 
               className="text-sm px-5 py-2.5 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium"
             >
               Contact
@@ -82,7 +82,7 @@ export function Navbar() {
                 Blog
               </Link>
               <a 
-                href="mailto:abhijithvaofficial@gmail.com" 
+                href="mailto:mail@abhijithva.in" 
                 className="block text-sm px-4 py-2.5 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium text-center m-4"
               >
                 Contact
