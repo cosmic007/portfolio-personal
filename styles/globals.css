@@ -122,22 +122,4 @@
   body {
     @apply bg-background text-foreground;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold;
-  }
-  
-  p {
-    @apply text-balance;
-  }
-
-  a {
-    @apply transition-colors;
-  }
-}
-
-@layer components {
-  .container-max {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
 }
