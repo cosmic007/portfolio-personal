@@ -13,7 +13,23 @@ export const metadata: Metadata = {
   description: 'Software Engineer specializing in Java, Spring Boot, and cloud technologies. Explore my projects and technical insights.',
   keywords: ['Abhijith V A', 'Software Engineer', 'Java Developer', 'Spring Boot', 'Cloud Technologies', 'Portfolio', 'Blog'],
   authors: [{ name: 'Abhijith V A', url: 'https://abhijithva.in' }],
-  
+  icons: {
+    icon: [
+      {
+        url: '/icons8-dev-windows-10-32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icons8-dev-windows-10-32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icons8-dev-windows-10-32.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/icons8-dev-windows-10-32.png',
+  },
 }
 
 export default function RootLayout({
