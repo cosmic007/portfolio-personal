@@ -11,24 +11,9 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Abhijith V A - Software Engineer | Portfolio & Blog',
   description: 'Software Engineer specializing in Java, Spring Boot, and cloud technologies. Explore my projects and technical insights.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+  keywords: ['Abhijith V A', 'Software Engineer', 'Java Developer', 'Spring Boot', 'Cloud Technologies', 'Portfolio', 'Blog'],
+  authors: [{ name: 'Abhijith V A', url: 'https://abhijithva.in' }],
+  
 }
 
 export default function RootLayout({
