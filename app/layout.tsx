@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icons8-dev-windows-10-32.png',
+        url: '/icons8-dev-32-white.png',
         media: '(prefers-color-scheme: light)',
       },
       {
