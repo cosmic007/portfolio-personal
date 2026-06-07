@@ -8,7 +8,7 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-background mb-6 text-lg">About</h3>
             <p className="text-base text-background/80 leading-relaxed">
-              Software Engineer specializing in Java, Spring Boot, and cloud solutions. Building scalable systems and solving complex problems.
+              Software Engineer specializing in Java, Spring Boot, and cloud solutions. Building scalable systems and solving complex problems with enterprise applications and DevOps expertise.
             </p>
           </div>
           
@@ -26,7 +26,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:mail@abhijithva.in" className="text-background/80 hover:text-background transition-colors font-medium">
+                <a href="mailto:abhijithvaofficial@gmail.com" className="text-background/80 hover:text-background transition-colors font-medium">
                   Get in Touch
                 </a>
               </li>
