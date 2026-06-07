@@ -1,0 +1,24 @@
+# Robots.txt for Abhijith V A Portfolio
+
+# Allow all bots
+User-agent: *
+Allow: /
+Disallow: /.next/
+Disallow: /api/
+Allow: /api/og
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://abhijithva.in/sitemap.xml
+Sitemap: https://abhijithva.in/sitemap-projects.xml
+Sitemap: https://abhijithva.in/sitemap-blog.xml
+
+# Crawl delay
+Crawl-delay: 1

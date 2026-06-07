@@ -51,24 +51,31 @@ export function SkillsExperience() {
   ];
 
   return (
-    <section className="py-20 md:py-32 border-t border-border/50">
+    <section className="py-20 md:py-32 border-t border-border/50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-20 -z-10"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-20 -z-10"></div>
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Skills Section */}
         <div className="mb-20 md:mb-32">
           <div className="mb-12 md:mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-3">Skills & Expertise</h2>
-            <div className="w-16 h-1.5 bg-primary rounded-full"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-primary to-primary/40 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {Object.entries(skills).map(([category, items]) => (
-              <div key={category} className="bg-white rounded-xl border border-border p-8">
-                <h3 className="text-lg font-bold text-foreground mb-4">{category}</h3>
+              <div 
+                key={category} 
+                className="bg-gradient-to-br from-white to-white/50 rounded-xl border border-border/50 p-8 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group cursor-pointer backdrop-blur-sm"
+              >
+                <h3 className="text-lg font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">{category}</h3>
                 <div className="flex flex-wrap gap-2">
                   {items.map((skill) => (
                     <span
                       key={skill}
-                      className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold hover:bg-primary/20 transition-colors"
+                      className="px-3 py-1.5 rounded-full bg-gradient-to-r from-primary/10 to-primary/5 text-primary text-xs font-semibold hover:from-primary hover:to-primary/70 hover:text-primary-foreground transition-all duration-300 border border-primary/20 hover:border-primary/50 hover:shadow-md hover:shadow-primary/20"
                     >
                       {skill}
                     </span>
@@ -83,26 +90,35 @@ export function SkillsExperience() {
         <div>
           <div className="mb-12 md:mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-3">Professional Experience</h2>
-            <div className="w-16 h-1.5 bg-primary rounded-full"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-primary to-primary/40 rounded-full"></div>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             {experience.map((job, index) => (
-              <div key={index} className="bg-white rounded-xl border border-border p-8 md:p-10">
+              <div 
+                key={index} 
+                className="bg-gradient-to-br from-white to-white/50 rounded-xl border border-border/50 p-6 md:p-10 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group backdrop-blur-sm overflow-hidden relative"
+              >
+                {/* Animated background on hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
                   <div>
-                    <h3 className="text-2xl font-bold text-foreground">{job.title}</h3>
-                    <p className="text-primary font-semibold mt-2">{job.company}</p>
+                    <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">{job.title}</h3>
+                    <p className="text-primary font-semibold mt-2 flex items-center gap-2">
+                      <span className="inline-block w-2 h-2 bg-primary rounded-full"></span>
+                      {job.company}
+                    </p>
                   </div>
-                  <span className="text-sm text-muted-foreground font-semibold whitespace-nowrap">
+                  <span className="text-sm text-muted-foreground font-semibold whitespace-nowrap px-4 py-2 rounded-lg bg-primary/5 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                     {job.period}
                   </span>
                 </div>
                 <ul className="space-y-3">
                   {job.highlights.map((highlight, i) => (
                     <li key={i} className="flex gap-3">
-                      <span className="text-primary font-bold mt-1">•</span>
-                      <span className="text-muted-foreground leading-relaxed">{highlight}</span>
+                      <span className="text-primary font-bold mt-1 flex-shrink-0">→</span>
+                      <span className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">{highlight}</span>
                     </li>
                   ))}
                 </ul>

@@ -2,8 +2,15 @@ import Link from 'next/link';
 import { getAllPosts } from '@/lib/markdown';
 
 export const metadata = {
-  title: 'Projects',
-  description: 'Check out my latest projects and work',
+  title: 'Projects | Abhijith V A - Software Engineer',
+  description: 'Explore my portfolio of projects showcasing expertise in Java, Spring Boot, Oracle Cloud, DevOps, and enterprise application development. Real-world solutions to complex technical challenges.',
+  keywords: ['Projects', 'Portfolio', 'Java Projects', 'Spring Boot', 'Cloud Applications', 'Enterprise Solutions', 'Software Development'],
+  openGraph: {
+    title: 'Projects | Abhijith V A',
+    description: 'Explore my portfolio of projects built with Java, Spring Boot, and cloud technologies.',
+    url: 'https://abhijithva.in/projects',
+    type: 'website',
+  },
 };
 
 export default function ProjectsPage() {
@@ -26,7 +33,20 @@ export default function ProjectsPage() {
             href={`/projects/${project.metadata.slug}`}
             className="group"
           >
-            <div className="bg-white rounded-xl border border-border hover:border-primary/50 transition-all duration-300 h-full flex flex-col p-8 md:p-10 hover:shadow-lg">
+            <div className="
+  bg-gradient-to-br
+  from-white/[0.03]
+  to-white/[0.01]
+  backdrop-blur-md
+  rounded-2xl
+  border border-white/10
+  hover:border-primary/40
+  transition-all duration-500
+  h-full flex flex-col
+  p-8 md:p-10
+  hover:-translate-y-1
+  hover:shadow-2xl
+">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-primary transition-colors mb-4">
                 {project.metadata.title}
               </h2>

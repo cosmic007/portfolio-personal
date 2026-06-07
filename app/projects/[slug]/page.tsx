@@ -61,16 +61,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         ← Back to Projects
       </Link>
 
-      {project.metadata.image && (
-        <div className="relative h-96 overflow-hidden rounded-lg mb-8">
-          <img
-            src={project.metadata.image}
-            alt={project.metadata.title}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      )}
-
       <header className="mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
           {project.metadata.title}

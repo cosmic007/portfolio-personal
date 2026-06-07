@@ -9,10 +9,70 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Abhijith V A - Software Engineer | Portfolio & Blog',
-  description: 'Software Engineer specializing in Java, Spring Boot, and cloud technologies. Explore my projects and technical insights.',
-  keywords: ['Abhijith V A', 'Software Engineer', 'Java Developer', 'Spring Boot', 'Cloud Technologies', 'Portfolio', 'Blog'],
+  title: 'Abhijith V A - Software Engineer | Java | Spring Boot | Cloud',
+  description: 'Software Engineer specializing in Java, Spring Boot, Oracle Cloud Infrastructure, CI/CD pipelines, and enterprise application development. Experienced in production deployments, DevOps, and scalable systems. Check out my projects and technical insights.',
+  keywords: [
+    'Abhijith V A',
+    'Software Engineer',
+    'Java Developer',
+    'Spring Boot Developer',
+    'Oracle Cloud',
+    'DevOps Engineer',
+    'Cloud Technologies',
+    'Enterprise Applications',
+    'CI/CD Pipelines',
+    'Production Support',
+    'Portfolio',
+    'Blog',
+    'Technical Articles',
+    'Trivandrum',
+    'India',
+  ],
   authors: [{ name: 'Abhijith V A', url: 'https://abhijithva.in' }],
+  creator: 'Abhijith V A',
+  publisher: 'Abhijith V A',
+  metadataBase: new URL('https://abhijithva.in'),
+  alternates: {
+    canonical: 'https://abhijithva.in',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://abhijithva.in',
+    siteName: 'Abhijith V A - Software Engineer',
+    title: 'Abhijith V A - Software Engineer | Java | Spring Boot | Cloud',
+    description: 'Software Engineer specializing in Java, Spring Boot, Oracle Cloud Infrastructure, CI/CD pipelines, and enterprise application development.',
+    images: [
+      {
+        url: '/images/profile.jpg',
+        width: 1200,
+        height: 1200,
+        alt: 'Abhijith V A Profile',
+        type: 'image/jpeg',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Abhijith V A - Software Engineer',
+    description: 'Software Engineer specializing in Java, Spring Boot, and cloud technologies.',
+    images: ['/images/profile.jpg'],
+    creator: '@abhijithva',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code', // Update with actual verification code
+  },
   icons: {
     icon: [
       {
@@ -38,8 +98,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="bg-background scroll-smooth">
-      <body className="font-sans antialiased flex flex-col min-h-screen bg-background text-foreground">
+    <html lang="en" className="dark">
+      <body className="bg-background text-foreground flex flex-col min-h-screen antialiased">
         <Navbar />
         <main className="flex-1 w-full">
           {children}

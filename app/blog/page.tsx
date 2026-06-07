@@ -2,8 +2,15 @@ import Link from 'next/link';
 import { getAllPosts } from '@/lib/markdown';
 
 export const metadata = {
-  title: 'Blog',
-  description: 'Read my latest articles and thoughts on web development',
+  title: 'Blog | Abhijith V A - Technical Articles & Insights',
+  description: 'Read technical articles and insights on Java, Spring Boot, cloud technologies, DevOps, and enterprise application development. Learn from real-world experiences.',
+  keywords: ['Blog', 'Technical Articles', 'Java', 'Spring Boot', 'Cloud', 'DevOps', 'Enterprise Development', 'Programming'],
+  openGraph: {
+    title: 'Blog | Abhijith V A',
+    description: 'Technical insights and articles on software engineering, Java, and cloud technologies.',
+    url: 'https://abhijithva.in/blog',
+    type: 'website',
+  },
 };
 
 export default function BlogPage() {
@@ -26,7 +33,21 @@ export default function BlogPage() {
             href={`/blog/${post.metadata.slug}`}
             className="group block"
           >
-            <article className="bg-white rounded-xl p-8 md:p-10 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+            <article
+  className="
+    bg-gradient-to-br
+    from-white/[0.03]
+    to-white/[0.01]
+    backdrop-blur-md
+    rounded-2xl
+    p-8 md:p-10
+    border border-white/10
+    hover:border-primary/40
+    transition-all duration-500
+    hover:-translate-y-1
+    hover:shadow-2xl
+  "
+>
               <time className="text-xs font-semibold text-primary uppercase tracking-wider">
                 {new Date(post.metadata.date).toLocaleDateString('en-US', {
                   year: 'numeric',
