@@ -16,7 +16,7 @@ export function SocialLinks() {
     },
     {
       name: 'Email',
-      url: 'mailto:abhijithvaofficial@gmail.com',
+      url: 'mailto:mail@abhijithva.in',
       icon: Mail,
     },
     {

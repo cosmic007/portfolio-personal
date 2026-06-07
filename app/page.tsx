@@ -22,7 +22,7 @@ export default function Home() {
     jobTitle: 'Software Engineer',
     worksFor: { '@type': 'Organization', name: 'Zafin' },
     sameAs: ['https://www.linkedin.com/in/abhijithofficial', 'https://github.com/cosmic007'],
-    email: 'abhijithvaofficial@gmail.com',
+    email: 'mail@abhijithva.in',
     telephone: '+919633286984',
   }
 
@@ -293,7 +293,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:abhijithvaofficial@gmail.com"
+              href="mailto:mail@abhijithva.in"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-primary text-on-primary hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 font-semibold"
             >
               Get in Touch

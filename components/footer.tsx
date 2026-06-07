@@ -26,7 +26,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:abhijithvaofficial@gmail.com" className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-medium">
+                <a href="mailto:mail@abhijithva.in" className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-medium">
                   Get in Touch
                 </a>
               </li>
